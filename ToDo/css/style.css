@@ -15,13 +15,52 @@ header {
     position: relative;
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    /*gap: 10px;*/
+    display: flex;
+    flex-wrap: wrap;
     width: 100vw;
     height: 60vh;
     margin: 0px;
     padding: 0px;
+    background-image: url(background_team.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#login_box{
+    flex: 1 1 auto;
+    background-color: grey;
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    align-items:stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#form-div{
+    flex: 1 1 auto;
+    display:flex;
+    flex-direction: column;
+    
+}
+form{
+    flex: 1 1 auto;
+    margin:5px;
+    padding:5px;
+    
+}
+#form-submit{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:5px;
+}
+#close_button{
+    flex: 0 1 auto;
+    background-color: red;
 }
 #top-nav {
     width: 100vw;
@@ -29,17 +68,13 @@ main {
     background-color: gold;
     margin: 0px;
     padding: 0px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-#left-nav {
-    background-color: green;
-    margin: 0px;
-    padding: 0px;
-}
-#center {
-    background-color: blue;
-    margin: 0px;
-    padding: 0px;
-}
+
 footer {
     width: 100vw;
     height: 10vh;
@@ -64,4 +99,50 @@ footer {
     height: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+
+.button{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.login:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
 }

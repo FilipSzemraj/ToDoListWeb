@@ -13,13 +13,33 @@
         </div>
     </header>
     <div id="top-nav">
+        <button id="login_button" class="button">Login!</button>
     </div>
     <main>
-
+        <div id="login_box">
+            
+            
+            
+            <form>
+                <div id="form-div">
+                <label for="username">Username:</label>
+                <input type="text", id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password", id="password" name="password" required>
+                </div>
+                <div id="form-submit">
+                <input type="submit" value="Submit" class="button">
+                <input id="close_button", type="button" value="Cancel" class="button">
+                <input id="register_button" type="button" value="Register" class="button">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2023</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
