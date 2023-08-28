@@ -35,3 +35,5 @@ openRegisterButton.addEventListener("click", function () {
     }
     isRegisterWindow=!isRegisterWindow;
 });
+
+
