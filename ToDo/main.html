@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazwa Twojej Strony</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <div class="title">
-            <p class="title-text">To do list</p>
+        <div id="title">
+            <p id="title-text">To do list</p>
         </div>
     </header>
     <div id="top-nav">
-        <button id="login_button" class="button">Login!</button>
+        <button id="loginButton" class="button">Login!</button>
     </div>
     <main>
-        <div id="login_box">
+        <div id="loginBox">
             
             
             
-            <form>
-                <div id="form-div">
+            <form id="formLogin">
                 <label for="username">Username:</label>
-                <input type="text", id="username" name="username" required>
+                <input type="text" id="username" name="username" required>
                 
                 <label for="password">Password:</label>
-                <input type="password", id="password" name="password" required>
-                </div>
-                <div id="form-submit">
+                <input type="password" id="password" name="password" required>
+                <div id="formSubmit">
                 <input type="submit" value="Submit" class="button">
-                <input id="close_button", type="button" value="Cancel" class="button">
-                <input id="register_button" type="button" value="Register" class="button">
+                <input id="closeButton" type="button" value="Cancel" class="button">
+                <input id="registerButton" type="button" value="Register" class="button">
                 </div>
             </form>
+            <div id="registerBox">
+                <form id="registerForm">
+                    <label for="username">Choose nickname:</label>
+                    <input type="text" id="usernameRWSegister" name="username_register" required>
+                    <label for="password">Choose password:</label>
+                    <input type="text" id="passwordRegister" name="password_register" required>
+                    <label for="password">Type password for second time:</label>
+                    <input type="text" id="passwordRegisterS" name="password_register" required>
+                    <input id="registerSubmit" type="Submit" value="Create new account" class="button">
+                </form>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2023</p>
+
+        <p>&copy; 2023 Filip Szemraj</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+            <path fill="#0534" fill-opacity="1" d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,96C840,117,960,171,1080,186.7C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+        </svg>
     </footer>
     <script src="script.js"></script>
 </body>

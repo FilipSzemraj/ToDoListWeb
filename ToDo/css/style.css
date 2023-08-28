@@ -18,7 +18,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     margin: 0px;
     padding: 0px;
     background-image: url(background_team.jpg);
@@ -33,11 +33,34 @@ main {
     background-color: grey;
     display: none;
     width: 50%;
-    height: 50%;
+    height: 26%;
     position: absolute;
-    align-items:stretch;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
+}
+#register_box{
+    position: absolute;
+    bottom:0px;
+    background-color: white;
+    flex: 1 1 auto;
+    align-items:stretch;
+    display:none;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+#form_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+form{
+    flex: 0 1 auto;
+    margin:5px;
+    padding:5px;
+
 }
 #form-div{
     flex: 1 1 auto;
@@ -45,17 +68,12 @@ main {
     flex-direction: column;
     
 }
-form{
-    flex: 1 1 auto;
-    margin:5px;
-    padding:5px;
-    
-}
 #form-submit{
     flex: 1 1 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap:wrap;
     margin:5px;
 }
 #close_button{
@@ -64,7 +82,7 @@ form{
 }
 #top-nav {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     background-color: gold;
     margin: 0px;
     padding: 0px;
