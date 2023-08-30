@@ -120,7 +120,7 @@ main{
 footer{
     flex-flow: column nowrap;
     background-size: cover;
-    background-color: blueviolet;
+    background-color: red;
     height:10vh;
     width:100vw;
     color: black;

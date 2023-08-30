@@ -18,26 +18,26 @@
     <main>
         <div id="loginBox">
                 <header id="headerLoginBox">Login</header>
-                <form id="formLogin" action="#">
+                <form id="formLogin" method="POST" action="php/signup.php">
                     <div class="errorTxt">This is an error message!</div>
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required>
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password" required>
                     <div id="formSubmit">
-                        <input id="submitLoginButton" type="submit" value="Submit" class="button" >
+                        <input id="submitLoginButton" type="submit" value="Submit" class="button" form="formLogin">
                         <input id="closeButton" type="button" value="Cancel" class="button">
                         <input id="registerButton" type="button" value="Register" class="button">
                     </div>
                 </form>
-            <div id="registerBox">
+            <div id="registerBox" method="POST" action="php/signup.php">
                 <form id="registerForm">
                     <label for="username">Choose nickname:</label>
                     <input type="text" id="usernameRegister" name="username_register" required>
                     <label for="password">Choose password:</label>
-                    <input type="text" id="passwordRegister" name="password_register" required>
+                    <input type="password" id="passwordRegister" name="password_register" required>
                     <label for="password">Type password for second time:</label>
-                    <input type="text" id="passwordRegisterS" name="password_register" required>
+                    <input type="password" id="passwordRegisterS" name="password_registerS" required>
                     <input id="registerSubmit" type="Submit" value="Create new account" class="button">
                 </form>
             </div>
